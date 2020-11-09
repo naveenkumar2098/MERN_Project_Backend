@@ -1,13 +1,14 @@
 {
-  "name": "projbackend",
+  "name": "project-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend of ecommerce store made using MERN stack.",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Naveen Kumar",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -28,5 +29,8 @@
     "npm": "^6.13.0",
     "stripe": "^8.117.0",
     "uuid": "^3.3.3"
+  },
+  "engines": {
+    "node": "12.5.0"
   }
 }
