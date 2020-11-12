@@ -1,6 +1,7 @@
 require("dotenv").config();
 
 const mongoose = require("mongoose");
+const compression = require('compression');
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
@@ -29,6 +30,7 @@ mongoose
   });
 
 //Middlewares
+app.use(compression())
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(cors());
